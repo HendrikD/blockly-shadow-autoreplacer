@@ -28,7 +28,7 @@
     Blockly.Field.prototype.setValue = function(newText) {
         setValue_.call(this, newText);
         if (this.sourceBlock_ && this.sourceBlock_.isShadow()) {
-            this.sourceBlock_.setShadow(true);
+            this.sourceBlock_.setShadow(false);
         }
     };
 })();
